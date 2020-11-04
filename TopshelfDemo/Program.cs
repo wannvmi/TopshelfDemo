@@ -16,9 +16,9 @@ namespace TopshelfDemo
         {
             HostFactory.Run(x =>
             {
-                x.SetServiceName("TopshelfDemo");
-                x.SetDisplayName("TopshelfDemo");
-                x.SetDescription("TopshelfDemo ·þÎñ");
+                x.SetServiceName("TopshelfDemo.ServiceName");
+                x.SetDisplayName("TopshelfDemo.DisplayName");
+                x.SetDescription("TopshelfDemo.Description");
 
                 x.Service<IHost>(s =>
                 {

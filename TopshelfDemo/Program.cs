@@ -65,6 +65,8 @@ namespace TopshelfDemo
                 {
                     services.RegisterEasyNetQ(hostContext.Configuration.GetConnectionString("RabbitMQ"));
 
+                    services.AddScoped<ToDoWorkService>();
+
                     services.AddHostedService<Worker>();
                 });
     }

@@ -9,6 +9,8 @@ namespace RabbitMQSender
 {
     public class Worker : BackgroundService
     {
+        const string QUEUE = "demo_queue";
+
         private readonly IBus _bus;
 
         private readonly ILogger<Worker> _logger;
@@ -20,8 +22,6 @@ namespace RabbitMQSender
             _logger = logger;
             _hostEnvironment = hostEnvironment;
         }
-
-        private const string QUEUE = "demo_queue";
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {

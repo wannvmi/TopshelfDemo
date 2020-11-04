@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UserSecretsId>dotnet-RabbitMQSender-C710B5C0-3B9A-43CC-93EC-65339BF1F564</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EasyNetQ" Version="5.6.0" />
+		<PackageReference Include="EasyNetQ.DI.Microsoft" Version="5.6.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.9" />
+		<PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+		<PackageReference Include="Serilog.Exceptions.EntityFrameworkCore" Version="5.7.0" />
+	</ItemGroup>
+</Project>

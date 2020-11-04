@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UserSecretsId>dotnet-TopshelfDemo-E613373B-8D6E-412A-9BDE-156FB501F92A</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="EasyNetQ" Version="5.6.0" />
+		<PackageReference Include="EasyNetQ.DI.Microsoft" Version="5.6.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.9" />
+		<PackageReference Include="Topshelf" Version="4.2.1" />
+		<PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+		<PackageReference Include="Serilog.Exceptions.EntityFrameworkCore" Version="5.7.0" />
+	</ItemGroup>
+</Project>
